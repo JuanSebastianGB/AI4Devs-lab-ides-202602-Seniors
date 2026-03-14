@@ -1,9 +1,12 @@
 # Ignore in all directories
 **/.DS_Store
-#**/.env
-**/.env.example
+**/.env
 **/node_modules
 **/prompts_master.md
+
+# Backend: uploads and env
+backend/uploads/
+backend/.env
 
 # other dependencies
 /.pnp
@@ -26,4 +29,3 @@ yarn-error.log*
 .vscode
 
 # .env
-
