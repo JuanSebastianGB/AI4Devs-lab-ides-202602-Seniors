@@ -1,0 +1,23 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+context: |
+  Tech stack: TypeScript, Node.js (Express), React 18, Prisma, Jest, Swagger/OpenAPI.
+  Standards: See AGENTS.md and ai-specs/specs/ (base-standards.mdc, backend-standards.mdc, frontend-standards.mdc, documentation-standards.mdc).
+  Conventions: TDD (failing tests first), English only for all artifacts, small tasks one at a time, fully typed code, clear naming.
+  Backend: Express API, Prisma ORM, swagger-jsdoc + swagger-ui-express for API docs.
+  Frontend: Create React App, React Testing Library.
+  Use conventional commits. Reference api-spec.yml, data-model.md, and development_guide.md in ai-specs/specs/ when relevant.
+
+# Per-artifact rules (optional)
+rules:
+  proposal:
+    - Keep proposals focused; include intent, scope, and approach.
+    - Include a "Non-goals" section when useful.
+  spec:
+    - Requirements and scenarios must be testable and in English.
+    - Reference existing specs in ai-specs/specs/ for consistency.
+  tasks:
+    - One deliverable per task; break into chunks of max ~2 hours.
+    - Each task must be implementable with TDD (test first, then code).
